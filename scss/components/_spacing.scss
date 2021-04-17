@@ -1,0 +1,41 @@
+// UX Spacing and Sizing
+//
+// 
+
+.ux-full-wh {
+	width: 100%;
+	height: 100%;
+}
+
+
+@each $k, $v in $spacers {
+	.p-#{$k} {
+		padding: #{$v};
+	} 
+}
+
+@for $i from 1 through 100 {
+	.w-#{$i}px {
+		width: #{$i}px;
+	}
+
+	.w-#{$i} {
+		width: #{$i}#{'%'};
+	}
+
+	.h-#{$i}px {
+		height: #{$i}px;
+	}
+
+	.h-#{$i} {
+		height: #{$i}#{'%'};
+	}
+
+	.fb-#{$i} {
+		flex: 0 0 #{$i}#{'%'};
+	}
+
+	.fb-#{$i}px {
+		flex: 0 0 #{$i}px;
+	}
+}

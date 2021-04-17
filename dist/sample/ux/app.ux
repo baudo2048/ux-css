@@ -1,0 +1,14 @@
+div
+    .className vbox ux-full-wh 
+    div
+        .className vbox fb-20 p-3
+        h1 'Heading
+    div
+        .className hbox 
+        div
+            .className hbox p-3 fb-30
+            h1 'Hello
+        div
+            .className vbox p-3 fb-20
+            h1 'boys
+                .className hover

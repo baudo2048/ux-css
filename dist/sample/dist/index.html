@@ -1,0 +1,159 @@
+<html><head></head><body>
+<script>
+window.addEventListener('DOMContentLoaded', (event) => {
+    document.head.appendChild(head());
+    window.onload = () => {
+        document.body.appendChild(body());
+    }
+});
+</script>
+<div id="ux-content-md" style="display:none">
+<div id="ux-post-post"># Hello ux-md
+Bla bla bla</div></div>
+<script>function app() 
+{
+var div_0 = document.createElement('div')
+div_0.className= 'vbox ux-full-wh'
+var div_2 = document.createElement('div')
+div_2.className= 'vbox fb-20 p-3'
+var h1_4 = document.createElement('h1')
+h1_4.append(document.createTextNode( 'Heading'))
+var div_5 = document.createElement('div')
+
+div_2.appendChild(h1_4)
+
+div_5.className= 'hbox'
+var div_7 = document.createElement('div')
+div_7.className= 'hbox p-3 fb-30'
+var h1_9 = document.createElement('h1')
+h1_9.append(document.createTextNode( 'Hello'))
+var div_10 = document.createElement('div')
+
+div_7.appendChild(h1_9)
+
+div_10.className= 'vbox p-3 fb-20'
+var h1_12 = document.createElement('h1')
+h1_12.append(document.createTextNode( 'boys'))
+h1_12.className= 'hover'
+
+div_10.appendChild(h1_12)
+
+
+div_5.appendChild(div_7)
+
+
+div_5.appendChild(div_10)
+
+
+div_0.appendChild(div_2)
+
+
+div_0.appendChild(div_5)
+
+
+
+return div_0
+}
+function body() 
+{
+var body = document.createElement('div')
+var app_1 = app()
+
+body.appendChild(app_1)
+
+
+
+return body
+}
+function eventConf() 
+{
+var root = document.createElement('div')
+
+    function dispatch (eventName, msg) {
+        console.log('dispatch - ' + eventName);
+        var detail = {detail: msg};
+        document.dispatchEvent(new CustomEvent(eventName, detail));
+    }
+    
+    // export function dispatch2 (eventName, msg, from, to)
+    
+    function register (eventName, callback){
+        document.addEventListener(eventName, callback);
+    }
+    
+    function unregister (eventName, callback){
+        document.removeEventListener(eventName, callback);
+    }
+    
+    function registerDefault (callback){
+        document.addEventListener(callback.name, callback);
+    }
+    
+    document.registerDefault = registerDefault
+    document.em = dispatch
+    document.register = register
+    document.unregister = unregister
+
+
+
+return root
+}
+function head() 
+{
+var head = document.createElement('div')
+var meta_1 = document.createElement('meta')
+meta_1.charset= 'utf-8'
+var meta_3 = document.createElement('meta')
+
+head.appendChild(meta_1)
+
+meta_3.name= 'viewport'
+meta_3.content= 'width=device-width, initial-scale=1, shrink-to-fit=no'
+var link_6 = document.createElement('link')
+
+head.appendChild(meta_3)
+
+link_6.href= '../../css/ux.css'
+link_6.rel= 'stylesheet'
+var link_9 = document.createElement('link')
+
+head.appendChild(link_6)
+
+link_9.href= 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
+var script_11 = document.createElement('script')
+
+head.appendChild(link_9)
+
+script_11.src= 'https://code.jquery.com/jquery-3.2.1.slim.min.js'
+script_11.integrity= 'sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN'
+script_11.crossOrigin= 'anonymous'
+var script_15 = document.createElement('script')
+
+head.appendChild(script_11)
+
+script_15.src= 'https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js'
+script_15.integrity= 'sha512-0DkA2RqFvfXBVeti0R1l0E8oMkmY0X+bAA2i02Ld8xhpjpvqORUcE/UBe+0KOPzi5iNah0aBpW6uaNNrqCk73Q=='
+script_15.crossOrigin= 'anonymous'
+
+head.appendChild(script_15)
+
+eventConf()
+
+return head
+}
+function snippets() 
+{
+var div_0 = document.createElement('div')
+var link_1 = document.createElement('link')
+link_1.rel= 'stylesheet'
+link_1.href= 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css'
+link_1.integrity= 'sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l'
+link_1.crossOrigin= 'anonymous'
+
+div_0.appendChild(link_1)
+
+
+
+return div_0
+}
+</script></body></html>
