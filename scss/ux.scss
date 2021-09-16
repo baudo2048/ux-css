@@ -4,10 +4,14 @@
  * Licensed under MIT (https://github.com/my/path/LICENSE)
  */
 
-//@import "functions";
-//@import "variables"; // Lo chiamerei theme oppure separiamo, variabili da theme
-//@import "mixins";
-//@import "theme";
+ 
+// Imported frameworks
+@import "bootstrap/bootstrap";
+//@import "mdb-ui-kit-3.5.0/src/scss/mdb.free.scss";
 
-@import "settings";
-@import "components";
+// UX Custom settings
+@import "components"; 
+
+
+
+

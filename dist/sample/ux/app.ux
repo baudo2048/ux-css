@@ -1,14 +1,34 @@
 div
-    .className vbox ux-full-wh 
+    .className vbox ux-full-wh background-color-red border
     div
-        .className vbox fb-20 p-3
+        .className vbox fb-20 p-3 background-color-cyan border
         h1 'Heading
     div
         .className hbox 
         div
-            .className hbox p-3 fb-30
+            -flexGrow 0
+            .className vbox p-3 fb-50 background-color-green border overflow-auto
             h1 'Hello
+                .className fb-20
+            div
+                -flexGrow 0
+                .className fb-80 background-color-yellow border
+                h3 'item
+                h3 'item
+                h3 'item
+                h3 'item
+                h3 'item
+                h3 'item
+                h3 'item
+                h3 'item
+                h3 'item
+                h3 'item                                
+                h3 'item
+                h3 'item
+                h3 'item
+                h3 'item
+                h3 'item
         div
-            .className vbox p-3 fb-20
+            .className vbox p-3 fb-50
             h1 'boys
                 .className hover

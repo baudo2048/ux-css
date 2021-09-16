@@ -1,8 +1,11 @@
 // UX Effects & animations
 
-*.hover:hover {
-    background-color: grey;
-    color: white;
+.hover:hover {
+    background-color: $gray-500;
+    color: $white;
+}
+
+.cliccable {
     cursor: pointer;
 }
 

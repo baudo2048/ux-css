@@ -1,0 +1,47 @@
+/*
+tag
+    .className menu-basic
+    span 'File              // Displayed on menu bar
+        div                 // Initially d-none, displayed on click on File span   
+            div 'New
+            div 'Open
+            div 'Save...
+
+This one need jQuery support to work properly (menu.js)
+
+$('.menu-basic>span>div').addClass('d-none');
+
+*/
+
+.menubar-basic {
+    background-color: black;
+    color: white;
+  }
+  
+  .menubar-basic > span {
+    margin: 5px;
+  }
+  
+  .menubar-basic > span:hover {
+    cursor:default;
+    background: radial-gradient(circle, rgba(35,38,39,0.9982274159663865) 100%, rgba(235,235,235,1) 100%, rgba(86,110,159,1) 100%);
+  }
+  
+  .menubar-basic > span > div {
+    position: fixed;
+    border: 1px solid white;
+    background-color: black;
+  }
+  
+  .menubar-basic > span > div > div {
+    margin: 5px 5px;
+    padding: 10px;
+    font-family: "Open Sans", "Courier New";
+    font-size: 12px;
+    color: white;
+  }
+  
+  .menubar-basic > span > div > div:hover {
+    cursor: default;
+    background: radial-gradient(circle, rgba(35,38,39,0.9982274159663865) 100%, rgba(235,235,235,1) 100%, rgba(86,110,159,1) 100%);
+  }
